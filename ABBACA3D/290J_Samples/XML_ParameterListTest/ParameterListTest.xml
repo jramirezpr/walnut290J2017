@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no" ?>
+<ParameterListTestData>
+<ComputationalDomain>
+<xMin value = "-1.0"/>
+<xMax value =  "1.0"/>
+<yMin value = "-1.0" />
+<yMax value =  "1.0" />
+<zMin value = "-1.0" />
+<zMax value =  "1.0" />
+</ComputationalDomain>	
+
+<GridParameters>
+<xPanels value = "20" />
+<yPanels value = "20" />
+<zPanels value = "20" />
+</GridParameters>
+</ParameterListTestData>

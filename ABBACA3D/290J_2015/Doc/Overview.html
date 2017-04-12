@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>290J Source Overview</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<p>This site provides links to component source files  and other supporting material.</p>
+<p><span class="style1">Important:</span>: The <a href="http://www.math.ucla.edu/~anderson/SCC/290J_Samples/source.php">290J_Samples</a> have been moved to a separate location and are now downloaded separately from the 290J_2015 aggregate source. See below for the assumed directory structure. </p>
+<h4>Notes:</h4>
+<p>For convenience, it is possible to download all of the sources in a single zip file. The directory structure of the uncompressed zip file is the recommended structure for the component sources. If one of the component sources is updated, links are povided that enable one to download only the component that has changed. </p>
+<p>The recommended placement of the aggregate component directory (here named 290J_2015) and the 290J_Samples directory is </p>
+<pre>
+      Your_290J_Directory
+================================================== 
+    |           |              |              |
+Your_ Task1 Your_Task_2   290J_Samples    290J_2015
+                          =========       =========
+                             ****           ****
+</pre>
+<p>If one utilizes the above directory structure, the sample <a href=
+"http://www.math.ucla.edu/~anderson/SCC/290J_TaskTemplate/source.php">290J_TaskTemplate</a> which, when uncompressed and inserted into your 290J directory in the following structure: </p>
+<pre>
+      Your_290J_Directory
+==========================================================  
+    |                 |                |              |
+290J_TaskTemplate  Your_Task_1     290J_Samples   290J_2015
+                                   =========      =========
+                                      ****          ****
+</pre>
+<p>has the makefile paths set so that executing </p>
+<p><code>make release </code></p>
+<p>within that directory executes a high level makefile (named Makefile) that first builds the XML_ParameterList library and then builds an executable TaskTemplate.exe. </p>
+</body>
+</html>

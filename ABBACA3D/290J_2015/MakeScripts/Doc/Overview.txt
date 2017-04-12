@@ -1,0 +1,10 @@
+<p>
+A collection of makefile scripts that can be included in a makefile to simplify the construction of makefiles for executables and libraries. The makefiles that utilize these scripts automatically implement dependency checking of both C++ source and C++ header files. 
+</p>
+<p>
+The makefile that a user constructs consists of a specification of the essential information that is required to build an executable or a library (source files to be compiled, include paths, etc.) and include statements specifying the inclusion of the approprate makefile scripts. 
+</p>
+<p>
+The motivation for the construction of these scripts was to enable the creation of makefiles that have functionality and ease of use that closely mimics that provided by current integrated development environments such as MS Visual Studio. With respect to software tool development history, the construction of these scripts might be considered "going backwards", as one reason for the creation of integrated development environments was to free the user from having to learn about and use makefiles. However, in scientific computing, where one is often creating, building and running executables on remote machines, makefiles are still very useful, as they can be invoked via a command line interface. 
+</p>
+

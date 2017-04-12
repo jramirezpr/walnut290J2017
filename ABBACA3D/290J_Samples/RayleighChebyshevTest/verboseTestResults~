@@ -1,0 +1,72 @@
+10x10
+
+Evalue       Est.  Error    Rate       Evalue       Est.  Error      Rate 
+   5 7.120801e+02 1.000000e+10 1.000000e+00 9.544131e+01 1.000000e+10  1.000000e+00 
+  10 7.625748e+02 5.959440e-01 1.000000e+00 4.299452e+01 1.097863e+01  1.000000e+00 
+  15 7.802208e+02 1.214955e-02 3.494636e-01 2.022209e+01 8.641953e-01  4.342008e-01 
+  20 7.804222e+02 2.977395e-06 1.140952e-02 1.957776e+01 9.583125e-04  2.829422e-02 
+  25 7.804226e+02 1.280820e-09 2.225706e-03 1.957739e+01 1.057360e-08  5.666465e-04 
+Minimum_Eigenvalue :     19.577  
+Maximum_Eigenvalue :     780.42 
+0APPLY COUNT0applyCountCumulative
+ Degree 1     Eig Diff Max: 6.2328e+06   Eig Conv Factor: 4.2682e+06 
+ Degree 2     Eig Diff Max: 0.54219      Eig Conv Factor: 0.25       
+ Degree 2     Eig Diff Max: 0.5502       Eig Conv Factor: 0.98762    
+ Degree 2     Eig Diff Max: 0.48313      Eig Conv Factor: 0.83411    
+ Degree 4     Eig Diff Max: 0.32751      Eig Conv Factor: 0.68295    
+ Degree 4     Eig Diff Max: 0.057821     Eig Conv Factor: 0.35398    
+ Degree 4     Eig Diff Max: 0.007862     Eig Conv Factor: 0.30732    
+ Degree 4     Eig Diff Max: 0.00033      Eig Conv Factor: 0.27845    
+ Degree 4     Eig Diff Max: 7.9264e-06   Eig Conv Factor: 0.27907    
+ Degree 4     Eig Diff Max: 5.6351e-07   Eig Conv Factor: 0          
+Found Count:   3 Largest Eig: 47.985    Lambda Bound: 781.18    
+31APPLY COUNT31applyCountCumulative
+ Degree 1     Eig Diff Max: 0.92586      Eig Conv Factor: 8.2151e+05 
+ Degree 1     Eig Diff Max: 0.00093413   Eig Conv Factor: 0.25034    
+ Degree 2     Eig Diff Max: 0.00073953   Eig Conv Factor: 0.83087    
+ Degree 2     Eig Diff Max: 0.00025639   Eig Conv Factor: 0.4849     
+ Degree 4     Eig Diff Max: 3.189e-05    Eig Conv Factor: 0.3274     
+ Degree 4     Eig Diff Max: 2.1635e-07   Eig Conv Factor: 0          
+Found Count:   6 Largest Eig: 92.232    Lambda Bound: 781.18    
+45APPLY COUNT76applyCountCumulative
+ Degree 1     Eig Diff Max: 0.6163       Eig Conv Factor: 1.4243e+06 
+ Degree 2     Eig Diff Max: 0.0035258    Eig Conv Factor: 0.25369    
+ Degree 2     Eig Diff Max: 0.0049187    Eig Conv Factor: 1.1267     
+ Degree 3     Eig Diff Max: 0.0056861    Eig Conv Factor: 1.0877     
+ Degree 4     Eig Diff Max: 0.0025679    Eig Conv Factor: 0.49886    
+ Degree 4     Eig Diff Max: 0.00096139   Eig Conv Factor: 0.45078    
+ Degree 4     Eig Diff Max: 0.00029249   Eig Conv Factor: 0.37307    
+ Degree 4     Eig Diff Max: 4.6343e-05   Eig Conv Factor: 0.30455    
+ Degree 4     Eig Diff Max: 6.6803e-06   Eig Conv Factor: 0.45555    
+ Degree 4     Eig Diff Max: 9.1811e-07   Eig Conv Factor: 0          
+Found Count:   9 Largest Eig: 147.99    Lambda Bound: 781.18    
+77APPLY COUNT153applyCountCumulative
+ Degree 1     Eig Diff Max: 0.19209      Eig Conv Factor: 63819      
+ Degree 2     Eig Diff Max: 0.00035099   Eig Conv Factor: 0.31097    
+ Degree 2     Eig Diff Max: 0.00081801   Eig Conv Factor: 1.3282     
+ Degree 4     Eig Diff Max: 0.0010685    Eig Conv Factor: 0.75512    
+ Degree 4     Eig Diff Max: 0.00035642   Eig Conv Factor: 0.38454    
+ Degree 4     Eig Diff Max: 6.3875e-05   Eig Conv Factor: 0.42783    
+ Degree 4     Eig Diff Max: 9.8603e-06   Eig Conv Factor: 0.41548    
+ Degree 4     Eig Diff Max: 1.2948e-06   Eig Conv Factor: 0          
+Found Count:  10 Largest Eig: 147.99    Lambda Bound: 781.18    
+
+
+XXXX   RC_OperatorEig_Test Results XXXX
+
+Tolerance Specified : 2.00000e-06
+
+       Eigenvalue     Error       Relative Error 
+1     1.95774e+01  2.42050e-08   1.23638e-09
+2     4.79853e+01  1.08539e-06   2.26192e-08
+3     4.79853e+01  3.89743e-06   8.12213e-08
+4     7.63932e+01  4.02049e-09   5.26289e-11
+5     9.22316e+01  2.40949e-08   2.61243e-10
+6     9.22316e+01  1.18132e-06   1.28082e-08
+7     1.20640e+02  1.72025e-09   1.42594e-11
+8     1.20640e+02  1.70277e-05   1.41145e-07
+9     1.47985e+02  2.90607e-08   1.96376e-10
+10    1.47985e+02  1.30719e-06   8.83323e-09
+
+XXX Execution Completed XXXX
+

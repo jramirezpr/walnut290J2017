@@ -1,0 +1,116 @@
+/*
+ * ShroedingOp1D1Par.cpp
+ *
+ *  Created on: October 7, 2015
+ *      Author: Juan Carlos Ramirez, based on andersons 2D version
+ */
+
+//#include "UCLAQ_GridFunction1d.h"
+
+
+using namespace UCLAQ;
+
+
+#ifndef _ShroedingOp1D_
+#define _ShroedingOp1D_
+#include "LaplaceOp1d.h"
+
+/**
+
+ *                       Class ShroedingOp1D
+ *  A class whose apply member function implements the 3-point finite difference
+ *  discete  Schoedinger operator with homogeneous boundary conditions AND potential V given by a gridfunction.
+ */
+
+class ShroedingOp1D
+{
+public:
+
+    ShroedingOp1D()
+    {
+    initialize();
+    }
+
+    virtual ~ ShroedingOp1D()
+    {}
+
+    ShroedingOp1D(LaplaceOp1D LapOp1D,GridFunction1d Potential)//
+    {
+    initialize(LapOp1D,Potential);//
+    }
+
+    void initialize(LaplaceOp1D LapOp1D,GridFunction1d Potential)//, 
+    {
+this->LapOp1D  = LapOp1D;
+this->Potential=Potential;
+
+    }
+
+    void initialize()
+    {
+LapOp1D.initialize();
+Potential.initialize();
+
+    }
+
+    /**
+    This routine applies the 3-point discrete SCHROEDINGER operator to
+    the interior grid points associated with a uniform discretization
+    with m INTERIOR points that are spaced hx apart in the x-direction and 
+	 hy in the y-direction 
+	.
+
+    Input  : M270::Vector2D a vector of size m whose values are those of
+             associated with the interior values of the discretization
+
+    Output : The input vector is overwritten with the result
+
+    If _DEBUG is defined at compile time, bounds checking is performed
+    on operations associated on the M270::Vector1D class, which is why there is no explicit
+    bounds checking in this routine.
+    */
+
+    void apply(GridFunction1d& V)
+    {
+
+
+
+
+    GridFunction1d VtmpPot = V;
+	long i;
+
+
+ double hx = V.getHx();
+    long  xPanels = V.getXpanelCount();
+    long nx  = xPanels-1;
+    // Interior grid points not adjacent to the edge, Compute potential
+            for(i = 1; i <= nx; i++){
+
+    			VtmpPot(i)=Potential(i)*V(i);
+    				    
+
+    }
+//V is now alpha Lap(V)
+LapOp1D.apply(V);
+//Schoedinger is Potential-alpha Lap(V)
+VtmpPot-=V;
+V=VtmpPot;
+	
+}
+     GridFunction1d Potential;
+    LaplaceOp1D       LapOp1D; // Coefficient of the Laplace Operator
+
+/*
+    double            hx; // Grid spacing in the x-direction
+    long         xPanels; // Number of panels in the x-direction
+    long          nx; // Number of unknowns in the x-direction
+	
+
+*/
+
+};
+
+
+
+
+#endif /* _ShroedingOp1D */

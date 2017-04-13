@@ -34,7 +34,7 @@ using namespace std;
 // The command line compilation command for single threaded execution is
 //
 //
-// g++ RichExtr1DStopMainModHighOrd.cpp -std=c++11 -I../../290J_2015 -lfftw3 -o Rich1DTestformattingTemplate.exe
+// g++ RichExtr1DStopMainModHighOrd.cpp -std=c++11 -I../../290J_2015 -lfftw3 -o Rich1DTestTemplateRecursion.exe
 
 //
 
@@ -483,7 +483,7 @@ int main(){
 		//while(((jInner<innMaxIt)&&(inRelerr>innTol))||(jInner<=1))// or jinner>3
 		while((inRelerr>tau*tau*innTol)||(jInner<=1)){
 			//Richardson(tau,xPanels,xMin,xMax,yPanels,yMin,yMax,zPanels,zMin,zMax,DFT,Uinit,Uout,nuclearPotential,LX,LY,LZ);3D operator
-			RichardsonT<UCLAQ::GridFunction1d,UCLAQ::fftw3_sin1d>(tau,DFT,Uinit,Uout,nuclearPotential1D,heatEqStep1D,PotentialStep1D);//done tests with this one
+			RichardsonRecANDprojT<UCLAQ::GridFunction1d,UCLAQ::fftw3_sin1d>(tau,DFT,Uinit,Uout,nuclearPotential1D,heatEqStep1D,PotentialStep1D,2);//done tests with this one
 			//ABBAstepwithPROJ(tau,xPanels,xMin,xMax,yPanels,yMin,yMax,zPanels,zMin,zMax,DFT,Uinit,Uout,nuclearPotential,LX,LY,LZ);
  			//ABBAstepwithPROJ1D(tau,DFT,Uinit,Uout,nuclearPotential1D);//1D ABBAstepwith PROJ
 			Uinit=Uout;
